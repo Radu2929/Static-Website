@@ -63,24 +63,53 @@
       background-color: #1f6391;
     }
 
-    .certifications img {
-      max-width: 300px;
-      margin: 1rem;
+    /* Badge row in header */
+    .badge-row{
+      display:flex;
+      gap:1rem;
+      justify-content:center;
+      align-items:center;
+      margin-top:1rem;
+      flex-wrap:wrap;
+    }
+
+    .badge-row img{
+      height:64px;
+      width:auto;
+      object-fit:contain;
+      display:block;
+      background:#fff;
+      border-radius:6px;
+      padding:4px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    @media (max-width:600px){
+      .badge-row img{ height:52px; padding:3px; }
+    }
+
+    /* Certificates grid */
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .cert-grid img {
+      width: 100%;
+      height: auto;
       border: 1px solid #ccc;
-      border-radius: 5px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      background: #fff;
     }
 
-    .certifications a {
-      display: inline-block;
-      margin-top: 1rem;
-      color: #2980b9;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .certifications a:hover {
-      text-decoration: underline;
+    .cert-grid figcaption {
+      margin-top: 0.5rem;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #555;
     }
 
     footer {
@@ -97,6 +126,19 @@
   <header>
     <h1>Radu Babusca</h1>
     <p>Cloud & Infrastructure Enthusiast</p>
+
+    <!-- BADGES -->
+    <div class="badge-row" aria-label="Key badges">
+      <a href="#certifications" aria-label="Microsoft Certified">
+        <img src="Microsoft_logo.png" alt="Microsoft Certified badge">
+      </a>
+      <a href="#certifications" aria-label="ISTQB Foundation Level">
+        <img src="ISTQB.png" alt="ISTQB Foundation Level badge">
+      </a>
+      <a href="#certifications" aria-label="Azure Cloud Skills Bootcamp">
+        <img src="Azure%20Certification%20.png" alt="Azure Cloud Skills Bootcamp badge">
+      </a>
+    </div>
   </header>
 
   <nav>
@@ -109,7 +151,7 @@
     <section id="about">
       <h2>About Me</h2>
       <p>
-        I'm a detail-driven IT professional with hands-on experience in software testing and cloud engineering. I thrive in collaborative environments, enjoy solving complex problems, and bring a reflective mindset to every project. Currently applying for a Software Tester apprenticeship to deepen my QA expertise and contribute meaningfully to tech teams.
+        I’m an adaptable IT professional with hands-on experience across cloud engineering and software testing. I’ve built CI/CD pipelines with GitHub Actions, containerised apps in Docker, and deployed Azure resources (VMs, storage, networking) in three-tier architectures. I’m comfortable with Linux, Bash, PowerShell and Python for automation. In QA roles I planned and executed UAT, logged defects in Azure DevOps, and collaborated with developers to retest fixes. I communicate clearly, stay calm under pressure, and enjoy solving tricky problems. Right now I’m focused on foundational certifications and real projects that strengthen reliability, scalability and testability while contributing value to a collaborative team.
       </p>
     </section>
 
@@ -123,16 +165,23 @@
 
     <section id="certifications">
       <h2>Certifications</h2>
-      <div class="certifications">
-        <h3>Microsoft Azure Fundamentals (AZ-900)</h3>
-        <img src="azure-certification.png" alt="Azure Certification">
-        <br>
-        <a href="https://learn.microsoft.com/api/credentials/share/en-us/RaduBabusca-6987/9C16FCCD6925600D?sharingId=5383988B0CE97918" target="_blank">
-          🔗 View My Microsoft Certification
-        </a>
 
-        <h3>ISTQB Foundation Level</h3>
-        <img src="istqb.png" alt="ISTQB Certification">
+      <!-- Certificate Grid -->
+      <div class="cert-grid">
+        <figure>
+          <img src="istqb-certificate.png" alt="ISTQB Foundation Level Certificate">
+          <figcaption>ISTQB® Foundation Level</figcaption>
+        </figure>
+
+        <figure>
+          <img src="azure-certificate.png" alt="Microsoft Azure Fundamentals Certificate">
+          <figcaption>Microsoft Azure Fundamentals</figcaption>
+        </figure>
+
+        <figure>
+          <img src="generation-certificate.png" alt="Generation Skills Bootcamp Certificate">
+          <figcaption>Generation Skills Bootcamp</figcaption>
+        </figure>
       </div>
     </section>
   </main>
@@ -143,4 +192,5 @@
 
 </body>
 </html>
+
 
