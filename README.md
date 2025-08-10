@@ -8,3 +8,5 @@ The site highlights:
 - Downloadable CV.
 - Digital badges for key certifications.
 - Certificate images and links.
+
+https://radu2929.github.io/Static-Website/#about
