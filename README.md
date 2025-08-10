@@ -4,7 +4,7 @@ This repository contains my personal static website, hosted with GitHub Pages, s
 
 The site highlights:
 
-My professional summary and key technical skills
-Downloadable CV
-Digital badges for key certifications
-Certificate images and links.
+- My professional summary and key technical skills
+- Downloadable CV
+- Digital badges for key certifications
+- Certificate images and links.
