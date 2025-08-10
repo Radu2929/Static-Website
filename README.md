@@ -1,8 +1,10 @@
 # My First Azure Static Website
 
-This static site celebrates my achievement of passing the AZ-900 Microsoft Azure Fundamentals exam and deploying my first web page on Azure Blob Storage.
+This repository contains my personal static website, hosted with GitHub Pages, showcasing my professional profile, skills, CV, and industry certifications.
 
-## Files
+The site highlights:
 
-- `index.html` - The main web page.
-- `badge.png` - Azure certification badge image.
+My professional summary and key technical skills
+Downloadable CV
+Digital badges for key certifications
+Certificate images and links.
