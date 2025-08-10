@@ -58,12 +58,9 @@
       text-decoration: none;
       border-radius: 5px;
     }
+    .cv-link:hover { background-color: #1f6391; }
 
-    .cv-link:hover {
-      background-color: #1f6391;
-    }
-
-    /* Badge row in header */
+    /* Header badges */
     .badge-row{
       display:flex;
       gap:1rem;
@@ -72,7 +69,6 @@
       margin-top:1rem;
       flex-wrap:wrap;
     }
-
     .badge-row img{
       height:64px;
       width:auto;
@@ -83,7 +79,6 @@
       padding:4px;
       box-shadow:0 2px 6px rgba(0,0,0,0.15);
     }
-
     @media (max-width:600px){
       .badge-row img{ height:52px; padding:3px; }
     }
@@ -92,10 +87,9 @@
     .cert-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1.5rem;
+      gap: 1.25rem;
+      margin-top: 1.25rem;
     }
-
     .cert-grid img {
       width: 100%;
       height: auto;
@@ -104,7 +98,6 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.08);
       background: #fff;
     }
-
     .cert-grid figcaption {
       margin-top: 0.5rem;
       text-align: center;
@@ -128,16 +121,10 @@
     <p>Cloud & Infrastructure Enthusiast</p>
 
     <!-- BADGES -->
-    <div class="badge-row" aria-label="Key badges">
-      <a href="#certifications" aria-label="Microsoft Certified">
-        <img src="Microsoft_logo.png" alt="Microsoft Certified badge">
-      </a>
-      <a href="#certifications" aria-label="ISTQB Foundation Level">
-        <img src="ISTQB.png" alt="ISTQB Foundation Level badge">
-      </a>
-      <a href="#certifications" aria-label="Azure Cloud Skills Bootcamp">
-        <img src="Azure%20Certification%20.png" alt="Azure Cloud Skills Bootcamp badge">
-      </a>
+    <div class="badge-row" aria-label="Badges">
+      <img src="Generation_logo.png" alt="Generation badge">
+      <img src="ISTQB_logo.png" alt="ISTQB badge">
+      <img src="Microsoft_logo.png" alt="Microsoft badge">
     </div>
   </header>
 
@@ -166,21 +153,29 @@
     <section id="certifications">
       <h2>Certifications</h2>
 
-      <!-- Certificate Grid -->
+      <!-- Azure badge link preserved -->
+      <p style="margin:0.5rem 0 1rem 0;">
+        <a href="https://learn.microsoft.com/api/credentials/share/en-us/RaduBabusca-6987/9C16FCCD6925600D?sharingId=5383988B0CE97918"
+           target="_blank" rel="noopener">
+          View my Microsoft AZ-900 credential
+        </a>
+      </p>
+
+      <!-- Certificates -->
       <div class="cert-grid">
         <figure>
-          <img src="istqb-certificate.png" alt="ISTQB Foundation Level Certificate">
-          <figcaption>ISTQB® Foundation Level</figcaption>
-        </figure>
-
-        <figure>
-          <img src="azure-certificate.png" alt="Microsoft Azure Fundamentals Certificate">
+          <img src="Azure%20Certification%20.png" alt="Microsoft Azure Fundamentals Certificate">
           <figcaption>Microsoft Azure Fundamentals</figcaption>
         </figure>
 
         <figure>
-          <img src="generation-certificate.png" alt="Generation Skills Bootcamp Certificate">
+          <img src="Radu-Babusca-Generation%20Certificate.png" alt="Generation Skills Bootcamp Certificate">
           <figcaption>Generation Skills Bootcamp</figcaption>
+        </figure>
+
+        <figure>
+          <img src="ISTQB.Certificate" alt="ISTQB Foundation Level Certificate">
+          <figcaption>ISTQB® Foundation Level</figcaption>
         </figure>
       </div>
     </section>
@@ -192,5 +187,6 @@
 
 </body>
 </html>
+
 
 
